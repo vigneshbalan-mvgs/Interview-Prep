@@ -16,4 +16,7 @@ strings.pop(); //O(1)
 strings.unshift("x"); //add at the starting "a" ==> "x"
 //O(n)
 
+//splice();
+strings.splice(2, 0, "alien"); //O(n/2) ==> O(n)
+
 console.log(strings);
