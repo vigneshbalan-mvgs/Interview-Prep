@@ -23,9 +23,9 @@ console.timeEnd("getConcatenation");
 
 // optimal solution
 const getConcatenation2 = function (nums) {
-  let n = nums.length;
-  let output = [...nums];
-  for (let i = 0; i < n; i++) {
+  let n = nums.length; // storeing the length in n
+  let output = [...nums]; //  storing the nums in output
+  for (let i = 0; i < n; i++) { // looping and pushsing every element one more time to the output
     output.push(nums[i]);
   }
   return output;
