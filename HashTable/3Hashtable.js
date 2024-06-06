@@ -24,15 +24,15 @@ function firstRecurringCharacter1(input) {
   let map = {}
   for (let i = 0; i < input.length; i++) {
     if (map[input[i]] !== undefined) {
-      return input[i];
+      return input[i]
     }
     else {
-      map[input[i]] = i
+      map[input[i]] = i;
     }
+    console.log(map)
   }
-  console.log(map)
   return undefined
-}
+}//O(n)
 
-firstRecurringCharacter1([1, 2, 5, 1, 2, 3, 5, 1, 2, 4])
-firstRecurringCharacter([1, 2, 5, 1, 2, 3, 5, 1, 2, 4])
+firstRecurringCharacter1([2, 5, 1, 2, 3, 5, 1, 2, 4])
+firstRecurringCharacter([2, 5, 5, 2, 3, 5, 1, 2, 4])
