@@ -56,6 +56,9 @@ class LinkedList {
     // Return the linked list to allow chaining
     return this;
   }
+  insert(index, value) {
+
+  }
 
   // Method to convert the linked list to an array
   toArray() {
