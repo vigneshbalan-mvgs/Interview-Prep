@@ -56,8 +56,23 @@ class LinkedList {
     // Return the linked list to allow chaining
     return this;
   }
+  printList() {
+    const array = [];
+    let currentNode = this.head;
+    while (currentNode != null) {
+      array.push(currentNode.value);
+      currentNode = currentNode.next;
+    }
+  }
   insert(index, value) {
-
+    //check params
+    if (index >= this.length) {
+      return this.append;
+    }
+    const newNode = {
+      value: value,
+      next: null
+    };
   }
 
   // Method to convert the linked list to an array
@@ -90,6 +105,8 @@ myLinkedList.prepend(15);
 console.log(myLinkedList);
 // Prepend the value 114 to the linked list
 myLinkedList.prepend(114);
+myLinkedList.insert(111, 200);
+myLinkedList.printList();
 // Log the current state of the linked list
 console.log(myLinkedList);
 
