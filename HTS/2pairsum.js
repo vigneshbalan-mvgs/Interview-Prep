@@ -1,5 +1,4 @@
 //native
-
 function hasPairWithSum(arr, sum) {
   var len = arr.length;
   for (var i = 0; i < len - 1; i++) {
