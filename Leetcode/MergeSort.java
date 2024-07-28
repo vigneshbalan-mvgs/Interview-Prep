@@ -3,7 +3,6 @@
 //1 . Divide : split the array into two halves 
 //2 . Conquer: Recursively sort each half 
 //3 . Combine: Merge the two sorted halves into one sorted array.
-//
 
 public class MergeSort {
   // function to merge two subarrays of arr[]
